@@ -9,10 +9,8 @@ $(document).ready(function () {
         event.preventDefault();
 
         var newTag = $("#newGifButton").val().trim()
-        console.log(newTag);
         tag.push(newTag);
         addButtonsFromArray();
-        console.log(tag);
     });
     // on click of a populated button, perform a search; add results to the page
     $(".searchTagButton").on("click", function (event) {
